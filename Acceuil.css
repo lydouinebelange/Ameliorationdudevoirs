@@ -3,14 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    /* width: 100%; */
     
 
 } 
 body{
-    /* overflow: hidden; */
+    
     height: 100vh;
-    /* color: aliceblue; */ 
-    /* place-items: center; */
+    
 
 }
  
@@ -120,7 +120,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* background-color: #333; */
+   
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -167,6 +167,9 @@ body{
     color: white;
     text-decoration: none;
 }
+.button a:hover{
+    border: 2px solid;
+}
 .container1{
     width: 100%;
     display: flex;
@@ -197,13 +200,11 @@ gap: 2rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
-    /* background-color: rgb(0, 60, 255);
-    color: white;
-    text-decoration: none; */
+   
 
 }
 .button3 a{
-    /* padding: 14px 20px; */
+    padding: 14px 20px;
     background-color: rgb(0, 60, 255);
     color: white;
     text-decoration: none;
@@ -212,96 +213,82 @@ gap: 2rem;
    
 }
 .button3 a:hover{
-    transition-duration: 300ms;
+    border: 2px solid;
 }
 .button4 a{
+    padding: 14px 20px;
     border: 1px solid white;
     transition: 0.6s ease;
     transition-duration: 300ms;
 }
-
-
-  .footer {
+.button4 a:hover{
+    border: 2px solid;
+}
+.footer{
     flex-shrink: 0;
-    border-top: 1px dashed #000;
+    background-color:blue;
+    color:blue;
+}
+.contenu-footer {
     width: 100%;
-    background: white;
-    color: #333;}
-    .contenu-footer{
-        width: 120px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        font-size: 12px;
-        padding: 30px 0 50px;
-    }
-    .bloc{
-        width: 25%;
-        margin: 0 30px;
-    }
-    .footer-service h3,
-    .footer-media h3,
-    .footer-propos h3,
-    .footer-connexion h3{
-        font-size: 15px;
-        padding-bottom: 20px;
+    margin: 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 70px 50px 120px;
+    background-color: blue;
+    
+}
 
-    }
-    .liste-service,
-    .liste-media,
-    .liste-connexion{
-        list-style-type: none;
-        /* text-decoration: none; */
-    }
-     .liste-service  li{ 
-        text-decoration: none;
-        padding: 2px 0;
-    }
-    .liste-service li a{
-        text-decoration: none;
-        color: #333;
-    }
-    .liste-service  li a:hover{
-        color: rgb(3,3,3);
-    }
-    .liste-media{
-        position: relative;
-        right: 10px;
-
-    }
-    .liste-media a{
-        text-decoration: none;
-        /* color: #333; */
-        display: flex;
-        align-items: center;
-        font-size: 15px;
-    }
-    @media screen and (max-width: 1300px){
-        .contenu-footer{
-            width: 600px;
-            flex-wrap: wrap;
-     }
-     .bloc{
-        width: 30%;
-        margin: 0 0;
-     }
-     .bloc:nth-child(1),
-     .bloc:nth-child(2){
-        margin-bottom: 50px;
-     }
-    }
-
-    @media  screen and (max-width: 700px) {
-        .contenu-footer{
-            width: 300px
-        }
-        .bloc:nth-child(1),
-        .bloc:nth-child(2){
-            margin-bottom: 30px;
-        }
-        .bloc:nth-child(1){
-            margin-top: 0;
-        }
-        
-    }
+.footer-media h3,
+.footer-service h3,
+.footer-connexion h3,
+.footer-orange h3,
+.footer-propos h3 {
+   font-size: 25px;
+   padding-bottom: 20px;
+}
+.liste-service,
+.liste-connexion,
+.liste-media {
+    list-style-type: none;
+}
+.liste-service li{
+    padding: 2px 0;
+    /* text-decoration: none; */
+}
+.liste-service  a{
+    text-decoration: none;
+    color: white;
+}
+.liste-service li a:hover{
+    color:white;
+}
+.liste-connexion a{
+    text-decoration: none;
+    color: white;
+}
+.liste-connexion li a:hover{
+    color: white;
+}
+.liste-media a{
+    text-decoration: none;
+    color: white; 
+}
+.liste-media li a:hover{
+    color: white;  
+}
+.bloc{
+    color: white;
+}
+.liste-connexion a{
+    
+    color: white;
+}
+.liste-connexion a:hover{
+    border: 2px solid transparent ;
+    transition: 0.9 ease;
+    background-color:black;
+    transition-duration: 2,9s;
+}
