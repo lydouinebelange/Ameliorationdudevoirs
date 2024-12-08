@@ -1,0 +1,19 @@
+/* header{  */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color:cornflowerblue;
+    align-items: center;
+    height: 7rem;
+    top: 0;
+     overflow-y: hidden; 
+} 
+.logo{
+    background-color: cornflowerblue;
+    color: white;
+    margin: -8px;
+    padding: 10px;
+    background-size: cover;
+
+}
